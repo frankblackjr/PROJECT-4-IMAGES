@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Project 4 Images</title>
+  <style media="screen">
+    * {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body onload="myFunction()">
+  <h1>The Image</h1>
+  <h4>The how to define an image</h4>
+  <p>An Image is defined like so
+    <br>
+    Syntax: <code>&lt;img src="#" alt="description&gt; height="??px" width="??px"</code>
+    <br>
+    (You must always define the width and height)<br>
+    (CSS is best suited for defining width and height)</p>
+  <img src="resources/image.png" alt="Html Css Js" height="100px" width="auto">
+  <hr>
+  <br>
+  <h4>The Floating Image</h4>
+  <p>A floating Image can move to the left or right of text as seen below.</p>
+  <code>&lt;img src="#" alt="description style="<strong>float: right;</strong> hight:??px; width:??px;"&gt;</code>
+  <h5>Floating right</h5>
+  <img src="resources/image.png" alt="Html Css Js" style="float: right; height: 100px;; width:auto;">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <br>
+  <h5>Floating left</h5>
+  <img src="resources/image.png" alt="Html Css Js" style="float: left; height: 100px;; width:auto;">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <br>
+  <hr>
+  <h4>The image map</h4>
+  <p>An image map allows you to create multiple clickable links insde of your image</p>
+  <code>&lt;img src="image.png" usemap="#webLang"</code> <br>
+  <code>&lt;map name="webLang"&gt;</code> <br>
+  <code>&lt;area shape="rect" coords="From-left, From-top, width, height" href=stuff.htm&gt;</code> <br>
+  <code>&lt;area shape="circle" coords="From-left, From-top, diameter href=stuff.htm&gt;</code> <br>
+  <code>&lt;/map&gt;</code> <br>
+  <img src="resources/image.png" alt="html css js" usemap="#example" style="height:500px; width:500px;">
+  <map name="exampe">
+    <area shape="rect" coords="175,132,300,300" href="www.facebook.com" alt="">
+  </map>
+
+  <p id="content"></p>
+  <script>
+    function myFunction() {
+      var elmnt = document.getElementById("content");
+      elmnt.scrollIntoView();
+    }
+  </script>
+</body>
+
+</html>
