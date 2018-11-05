@@ -14,48 +14,58 @@
 <body onload="myFunction()">
   <h1>The Image</h1>
   <h4>The how to define an image</h4>
-  <p>An Image is defined like so
-    <br>
+  <p>An Image is defined like so</p>
+  <br>
     Syntax: <code>&lt;img src="#" alt="description&gt; height="??px" width="??px"</code>
-    <br>
-    (You must always define the width and height)<br>
+  <br>
+  <p>(You must always define the width and height)<br>
     (CSS is best suited for defining width and height)</p>
-  <img src="resources/image.png" alt="Html Css Js" height="100px" width="auto">
-  <hr>
-  <br>
-  <h4>The Floating Image</h4>
-  <p>A floating Image can move to the left or right of text as seen below.</p>
-  <code>&lt;img src="#" alt="description style="<strong>float: right;</strong> hight:??px; width:??px;"&gt;</code>
-  <h5>Floating right</h5>
-  <img src="resources/image.png" alt="Html Css Js" style="float: right; height: 100px;; width:auto;">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <br>
-  <h5>Floating left</h5>
-  <img src="resources/image.png" alt="Html Css Js" style="float: left; height: 100px;; width:auto;">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <br>
-  <hr>
-  <h4>The image map</h4>
-  <p>An image map allows you to create multiple clickable links insde of your image</p>
-  <code>&lt;img src="image.png" usemap="#webLang"</code> <br>
-  <code>&lt;map name="webLang"&gt;</code> <br>
-  <code>&lt;area shape="rect" coords="From-left, From-top, width, height" href=stuff.htm&gt;</code> <br>
-  <code>&lt;area shape="circle" coords="From-left, From-top, diameter href=stuff.htm&gt;</code> <br>
-  <code>&lt;/map&gt;</code> <br>
-  <img src="resources/image.png" alt="html css js" usemap="#example" style="height:500px; width:500px;">
-  <map name="exampe">
-    <area shape="rect" coords="175,132,300,300" href="www.facebook.com" alt="">
+    <img src="resources/image.png" alt="Html Css Js" height="100" width="auto">
+    <hr>
+    <br>
+    <h4>The Floating Image</h4>
+    <p>A floating Image can move to the left or right of text as seen below.</p>
+    <code>&lt;img src="#" alt="description style="<strong>float: right;</strong> hight:??px; width:??px;"&gt;</code>
+
+    <h5>Floating right</h5>
+    <img src="resources/image.png" alt="Html Css Js" style="float: right; height: 100px;; width:100px;">
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <br>
+
+    <h5>Floating left</h5>
+    <img src="resources/image.png" alt="Html Css Js" style="float: left; height: 100px;; width:auto;">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <br>
+    <hr style="clear: both;">
+    <h4>The image map</h4>
+    <p>An image map allows you to create multiple clickable links insde of your image</p>
+    <code>&lt;img src="image.png" usemap="#webLang"</code> <br>
+    <code>&lt;map name="webLang"&gt;</code> <br>
+    <code>&lt;area shape="rect" coords="x1, y1, x2, y2" href=stuff.htm&gt;</code>
+    <p>Think of the hands of a clock when looking for the x and y coords</p>
+    <code>&lt;area shape="circle" coords="x, y, diameter href=stuff.htm&gt;</code> <br>
+    <code>&lt;/map&gt;</code> <br>
+
+
+
+    <img src="resources/image.png" alt="html css js" usemap="#example" style="height:500px; width:500px;">
+    <map name="example">
+    <area shape="poly" coords="175,59 324,59 310,211 249,229 189,211 175,59 " href="#" alt="html5">
+    <area shape="poly" coords="49,278 186,214 232,257 248,319 123,407" href="#" alt="css3">
+    <area shape="poly" coords="449,277 375,406 250,317 265,257 310,213" href="#" alt="js">
+    <area shape="circle" coords="249,251,20" href="#" alt="">
   </map>
 
-  <p id="content"></p>
-  <script>
-    function myFunction() {
-      var elmnt = document.getElementById("content");
-      elmnt.scrollIntoView();
-    }
-  </script>
+    <p id="content"></p>
+    <script>
+      function myFunction() {
+        var elmnt = document.getElementById("content");
+        elmnt.scrollIntoView();
+      }
+    </script>
 </body>
 
 </html>
