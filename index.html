@@ -9,6 +9,7 @@
       margin: 0;
     }
   </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 
 <body onload="myFunction()">
@@ -28,7 +29,7 @@
     <code>&lt;img src="#" alt="description style="<strong>float: right;</strong> hight:??px; width:??px;"&gt;</code>
 
     <h5>Floating right</h5>
-    <img src="resources/image.png" alt="Html Css Js" style="float: right; height: 100px;; width:100px;">
+    <img src="resources/image.png" alt="Html Css Js" style="float: right; height:100px; width:100px;">
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
       irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -47,6 +48,8 @@
     <code>&lt;area shape="rect" coords="x1, y1, x2, y2" href=stuff.htm&gt;</code>
     <p>Think of the hands of a clock when looking for the x and y coords</p>
     <code>&lt;area shape="circle" coords="x, y, diameter href=stuff.htm&gt;</code> <br>
+    <p>The poly value allows you to map any shape you must how ever give both the x & y coordinates for each point.</p>
+    <code>&lt;area shape="poly" coords="x,y x2,y2 x3,y3 ect... href=stuff.htm&gt;</code> <br>
     <code>&lt;/map&gt;</code> <br>
 
 
@@ -59,13 +62,41 @@
     <area shape="circle" coords="249,251,20" href="#" alt="">
   </map>
 
-    <p id="content"></p>
-    <script>
-      function myFunction() {
-        var elmnt = document.getElementById("content");
-        elmnt.scrollIntoView();
-      }
-    </script>
+
+    <div class="myDiv" height="525px" width="350px" style="background-image:url('resources/sky.jpeg'); color: yellow">
+      <p>A background image is an image applied to the background using css.</p>
+      <p>Syntax:</p> <code>&lt;div style="background-image:url('clouds.jpg')"&gt;
+      &lt;/div&gt;</code>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+
+      <picture>
+        <source media="(min-width: 1600px)" srcset="resources/large.jpg">
+        <source media="(min-width: 720px)" srcset="resources/med.jpg">
+        <img src="resources/small.jpg" alt="">
+      </picture>
+
+      <p id="content"></p>
+      <script>
+        function myFunction() {
+          var elmnt = document.getElementById("content");
+          elmnt.scrollIntoView();
+        }
+      </script>
 </body>
 
 </html>
